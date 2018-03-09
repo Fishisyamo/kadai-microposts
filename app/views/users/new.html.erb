@@ -5,7 +5,8 @@
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
 
-    <%= form_for(@user) do |f| %>
+    <%= form_for(@user, url: signup_path) do |f| %>
+      <%= render 'layouts/error_messages', model: f.object %>
 
       <div class="form-group">
         <%= f.label :name, 'Name' %>
@@ -27,7 +28,7 @@
         <%= f.password_field :password_confirmation, class: 'form-control' %>
       </div>
 
-      <%= submit 'Sign up', class: 'btn btn-primary btn-block' %>
+      <%= f.submit 'Sign up', class: 'btn btn-primary btn-block' %>
     <% end %>
   </div>
 </div>
