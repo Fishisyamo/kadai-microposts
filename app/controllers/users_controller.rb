@@ -42,6 +42,13 @@ class UsersController < ApplicationController
     render 'show_follow'
   end
 
+  def favoring
+    @user = User.find(params[:id])
+    @micropost = current_user.microposts.build
+    @microposts = @user.favoring.page(params[:page])
+    render 'toppages/index'
+  end
+
   private
 
     def user_params

@@ -13,7 +13,10 @@
           </span>
         </div>
         <div>
-          <p><%= micropost.content %></p>
+          <p>
+            <%= micropost.content %>
+            <%= render 'favorites/favorite_button', micropost: micropost %>
+          </p>
         </div>
         <div>
           <% if current_user == micropost.user %>

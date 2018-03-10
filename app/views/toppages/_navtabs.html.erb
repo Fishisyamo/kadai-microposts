@@ -1,0 +1,11 @@
+<div class="col-xs-8">
+  <ul class="nav nav-tabs nav-justified">
+    <li class="<%= 'active' if current_page?(root_path) %>">
+      <%= link_to root_path do %>Microposts<% end %>
+    </li>
+    <li class="<%= 'active' if current_page?(favoring_user_path(user)) %>">
+      <%= link_to favoring_user_path(user) do %>Favorite<% end %>
+    </li>
+  </ul>
+  <%= render 'microposts/microposts', microposts: @microposts %>
+</div>
