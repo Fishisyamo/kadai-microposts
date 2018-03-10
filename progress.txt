@@ -1,3 +1,4 @@
-chapter1, toppages finished
-chapter2, signup   finished
-hhapter3, login    finished
+chapter1, toppages   finished
+chapter2, signup     finished
+chapter3, login      finished
+chapter4, microposts finished
