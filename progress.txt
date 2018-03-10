@@ -4,3 +4,4 @@ chapter3, login      finished
 chapter4, microposts finished
 chapter5, follow     finished
 chapter6, timeline   finished
+kadai,    favorite   finished
